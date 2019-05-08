@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 
 public class FindMultipleOccurrencesInString {
 
+//    fint the multible occurences of a pattern string in a text
     public HashMap<Integer,Integer> findOccurrence(String text, String patternString){
 
         HashMap<Integer,Integer> hm = new HashMap<>();
@@ -36,8 +37,10 @@ public class FindMultipleOccurrencesInString {
 
         String patternString = "is";
 
+//        get the start and end of the occurrence
         hm = findMultipleOccurrencesInString.findOccurrence(text, patternString);
 
+//        print the results
         for(Map.Entry m:hm.entrySet()){
             System.out.println("Found at: "+m.getKey()+"-"+m.getValue());
         }

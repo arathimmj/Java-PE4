@@ -14,12 +14,14 @@ public class CharacterOccurrenceWithoutLoop {
 
         List<Character> charList = new ArrayList<Character>();
 
+//        move the array into list
         for (Character character: charArray){
 
             charList.add(character);
 
         }
 
+//        find the frequency of occurrency
         int occurrences = Collections.frequency(charList, ch);
 
         return occurrences;
